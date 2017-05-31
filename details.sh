@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 ip=$(ifconfig wlan0 | grep "inet addr" | awk '{print $2}' | sed -e 's/addr://')
 currenttime=$(date)
 

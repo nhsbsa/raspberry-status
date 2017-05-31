@@ -1,3 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 currentdir=$(pwd)
-sudo echo $currentdir/bootstrap.sh >> /home/pi/.config/lxsession/LXDE-pi/autostart 
+sudo echo "@lxterminal --command /home/pi/raspberry-status/bootstrap.sh" >> /home/pi/.config/lxsession/LXDE-pi/autostart 
+

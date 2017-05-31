@@ -1,2 +1,3 @@
-#!/bin/bash
-chromium-browser output.html
+#!/bin/sh
+chromium-browser output.html &
+
