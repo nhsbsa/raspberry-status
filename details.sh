@@ -1,6 +1,6 @@
 #!/bin/bash
 ip=$(ifconfig wlan0 | grep "inet addr" | awk '{print $2}' | sed -e 's/addr://')
-currenttime=date
+currenttime=$(date)
 
 outputhtml=output.html
 
