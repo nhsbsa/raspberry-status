@@ -1,6 +1,7 @@
 #!/bin/sh
 currentdir=$(pwd)
-autostart=/home/pi/.config/lxsession/LXDE-pi/autostart
+autostart=/etc/xdg/lxsession/LXDE-pi/autostart
+
 sudo echo "@lxterminal --command /home/pi/raspberry-status/bootstrap.sh" >> $autostart
 
 # Prevent screen from blanking out
