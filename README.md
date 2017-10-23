@@ -36,6 +36,6 @@ https://www.raspberrypi.org/downloads/noobs/
 ## End of day shutdown
 To prevent the raspberry from overuse, ensure it shuts down periodically when not in use.
 1. Edit crontab
-```crontab -e```
+```sudo crontab -e```
 2. Schedule nightly shutdowns
 ```0 17 * * * /sbin/shutdown -h now```
