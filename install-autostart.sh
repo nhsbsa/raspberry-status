@@ -10,3 +10,6 @@ sudo echo "@xset -dpms         # disable DPMS (Energy Star) features." >> $autos
 sudo echo "@xset s noblank     # don't blank the video device" >> $autostart
 
 sudo sed -i -e '/@xscreensaver -no-splash/c\\#@xscreensaver -no-splash' $autostart
+
+#copy locally into pi home folder to make autostart work
+cp /etc/xdg/lxsession/LXDE-pi/autostart /home/pi/.config/lxsession/LXDE-pi/autostart
