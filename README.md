@@ -21,3 +21,14 @@ https://www.raspberrypi.org/downloads/noobs/
 1. Insert the SD card fully into the Raspberry.
 2. Connect the monitor, keyboard and mouse before inserting and turning on the power.
 
+## Configure the Raspberry
+1. Clone this repository in a new a terminal:
+```git clone https://github.com/nhsbsa/raspberry-status.git```
+2. cd raspberry-status
+3. 
+3. sudo ./install-raspberry.sh
+4. reboot
+
+## Configure Chromium
+1. Add Revolver extension
+2. Add specific tabs pages to Chrome startup. Settings --> On start-up
