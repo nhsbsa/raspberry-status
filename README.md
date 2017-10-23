@@ -32,3 +32,10 @@ https://www.raspberrypi.org/downloads/noobs/
 ## Configure Chromium
 1. Add Revolver extension
 2. Add specific tabs pages to Chrome startup. Settings --> On start-up
+
+## End of day shutdown
+To prevent the raspberry from overuse, ensure it shuts down periodically when not in use.
+1. Edit crontab
+```crontab -e```
+2. Schedule nightly shutdowns
+```0 17 * * * /sbin/shutdown -h now```
